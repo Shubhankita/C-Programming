@@ -23,7 +23,7 @@ void print (int months,double bal)
 
 }
 
-void retire( int startAge, double initial, retire_info working, retire_info retired)
+void retirement ( int startAge, double initial, retire_info working, retire_info retired)
 {
   double b = initial;
   int t_month= startAge;
@@ -56,7 +56,7 @@ int main ()
   retired.contribution =-4000;
   retired.rate_of_return = 0.01/12;
 
-  retire(327,21345,working,retired);
+  retirement(327,21345,working,retired);
   return 0;
 }
 
