@@ -18,7 +18,6 @@ double balance(double bal,retire_info  stat)
 
 void print (int months,double bal)
 {
-  //  printf("Age %3d month %2d you have $%.21f\n",months/12,months%12,bal);
   printf("Age %3d month %2d you have $%.2lf\n", months / 12, months % 12, bal);
   return ;
 
