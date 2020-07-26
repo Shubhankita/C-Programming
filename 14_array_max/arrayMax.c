@@ -2,15 +2,14 @@
 #include <stdlib.h>
 
 int * arrayMax(int * array, int n) {
-  if (array != NULL && n!=0){
-    int large = 0;
-    for(int i =1; i<n ; i++)
-      {
-	if( array[i]> array[large])
-	  large = i;
-	return array + large;
+  if(array!=NULL && n!=0){
+    int index_of_largest=0;
+    for(int i=1;i<n;i++){
+      if(array[i] > array[index_of_largest]){
+	index_of_largest=i;
       }
-    
+    }
+    return array+index_of_largest;
   }
   return NULL;
 }
