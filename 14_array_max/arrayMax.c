@@ -3,13 +3,13 @@
 
 int * arrayMax(int * array, int n) {
   if(array!=NULL && n!=0){
-    int index_of_largest=0;
+    int largest=0;
     for(int i=1;i<n;i++){
-      if(array[i] > array[index_of_largest]){
-	index_of_largest=i;
+      if(array[i] > array[largest]){
+	largest=i;
       }
     }
-    return array+index_of_largest;
+    return array+largest;
   }
   return NULL;
 }
